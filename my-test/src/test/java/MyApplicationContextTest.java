@@ -23,5 +23,7 @@ public class MyApplicationContextTest {
 		BeanFactory bf = new XmlBeanFactory(new ClassPathResource("applicationContext.xml"));
 		MyTestBean bean2 = (MyTestBean) bf.getBean("myTestBean");
 		assertEquals("testStr", bean2.getTestStr());
+
+		System.out.println("test");
 	}
 }
